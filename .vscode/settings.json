@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.sdf": "xml",
+        "*.world": "xml",
+        "chrono": "cpp",
+        "fstream": "cpp",
+        "string": "cpp"
+    }
+}
