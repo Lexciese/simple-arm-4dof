@@ -1,5 +1,7 @@
-# ros2_control_demo_example_9
+# 4 DOF Robot Arm
 
-   This example demonstrates the switching between simulation and real hardware by means of the *RRBot* - or ''Revolute-Revolute Manipulator Robot''.
+> :warning: **Implementation of ROS2_Control framework to create hardware interface and simulating with gazebo**: Follow the following setup and how-to-run the program
 
-Find the documentation in [doc/userdoc.rst](doc/userdoc.rst) or on [control.ros.org](https://control.ros.org/master/doc/ros2_control_demos/example_9/doc/userdoc.html).
+## Installation and Setup
+1. Install ROS2 and the suitable gazebo version. Example: ROS2 Jazzy and Gazebo Harmony
+2. 
