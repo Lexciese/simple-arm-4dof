@@ -85,6 +85,11 @@
       </visual>
     </link>
     <link name="link0">
+      <inertial>
+        <inertia ixx="0.00207" ixy="0.00000" ixz="0.00000" iyy="0.00207" iyz="0.00000" izz="0.00207"/>
+        <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 -0.00000 0.00000"/>
+        <mass value="0.30000"/>
+      </inertial>
       <visual name="link_0">
         <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.00000 0.00000 0.00000" />
         <geometry>
