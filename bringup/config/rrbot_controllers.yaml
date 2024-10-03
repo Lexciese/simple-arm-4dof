@@ -12,6 +12,6 @@ forward_position_controller:
     joints:
       - joint0
       - joint1
+      - joint2
       - joint3
-      - joint4
     interface_name: position
