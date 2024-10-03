@@ -15,7 +15,7 @@ https://github.com/ros-simulation/gazebo_ros_demos/blob/kinetic-devel/rrbot_desc
     </gazebo>
 
     <!-- Link1 -->
-    <gazebo reference="root.000">
+    <gazebo reference="link0">
       <material>Gazebo/Orange</material>
     </gazebo>
 
