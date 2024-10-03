@@ -37,7 +37,7 @@
         <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 -0.00000 -0.00000" />
         <mass value="0.20000" />
       </inertial>
-      <visual name="link_1">
+      <visual>
       <origin rpy="-0.00000 -0.00000 -0.00000" xyz="-0.00000 0.00000 -0.00000"/>
       <geometry>
          <mesh filename="file://$(find ros2_control_demo_example_9)/meshes/stl/Cube.019.stl" scale="1.00000 1.00000 1.00000" />
@@ -51,7 +51,7 @@
         <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 0.00000 0.00000" />
         <mass value="0.20000" />
       </inertial>
-      <visual name="link_2">
+      <visual>
         <origin rpy="-0.00002 -0.00000 0.00000" xyz="-0.00000 0.00000 -0.00000" />
         <geometry>
           <mesh filename="file://$(find ros2_control_demo_example_9)/meshes/stl/Cube.010.stl" scale="1.00000 1.00000 1.00000" />
@@ -64,7 +64,7 @@
         <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 -0.00000 0.00000" />
         <mass value="0.20000" />
       </inertial>
-      <visual name="link_3">
+      <visual>
         <origin rpy="-0.00002 -0.00000 0.00000" xyz="-0.00000 -0.00000 -0.00000" />
         <geometry>
           <mesh filename="file://$(find ros2_control_demo_example_9)/meshes/stl/Cube.013.stl" scale="1.00000 1.00000 1.00000" />
@@ -77,7 +77,7 @@
         <origin rpy="0.00000 0.00000 0.00000" xyz="0.00084 -0.00000 0.00027"/>
         <mass value="0.20000"/>
       </inertial>
-      <visual name="link_4">
+      <visual>
         <origin rpy="-0.00002 -0.00000 0.00000" xyz="-0.00000 0.00000 0.00000" />
         <geometry>
           <mesh filename="file://$(find ros2_control_demo_example_9)/meshes/stl/Cube.014.stl" scale="1.00000 1.00000 1.00000" />
@@ -90,7 +90,7 @@
         <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 -0.00000 0.00000"/>
         <mass value="0.30000"/>
       </inertial>
-      <visual name="link_0">
+      <visual>
         <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.00000 0.00000 0.00000" />
         <geometry>
           <mesh filename="file://$(find ros2_control_demo_example_9)/meshes/stl/Cube.018.stl" scale="1.00000 1.00000 1.00000" />
