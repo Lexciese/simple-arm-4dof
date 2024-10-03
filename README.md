@@ -19,3 +19,4 @@ sudo apt install ros-jazzy-gz-ros2-control ros-jazzy-gz-plugin-vendor ros-jazzy-
 ros2 launch ros2_control_demo_example_9 view_robot.launch.py
 ```
 ![Screenshot from 2024-10-03 20-49-35](https://github.com/user-attachments/assets/f4c2ae20-656d-4d6f-a1a1-5eb70923a450)
+ 
