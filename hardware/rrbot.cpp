@@ -192,7 +192,7 @@ hardware_interface::return_type RRBotSystemPositionOnlyHardware::read(
   const rclcpp::Time & /*time*/, const rclcpp::Duration & /*period*/)
 {
   // BEGIN: This part here is for exemplary purposes - Please do not copy to your production code
-  RCLCPP_INFO(rclcpp::get_logger("RRBotSystemPositionOnlyHardware"), "Reading...");
+  // RCLCPP_INFO(rclcpp::get_logger("RRBotSystemPositionOnlyHardware"), "Reading...");
 
   for (uint i = 0; i < hw_states_.size(); i++)
   {
@@ -202,7 +202,7 @@ hardware_interface::return_type RRBotSystemPositionOnlyHardware::read(
       rclcpp::get_logger("RRBotSystemPositionOnlyHardware"), "Got state %.5f for joint %d!",
       hw_states_[i], i);
   }
-  RCLCPP_INFO(rclcpp::get_logger("RRBotSystemPositionOnlyHardware"), "Joints successfully read!");
+  // RCLCPP_INFO(rclcpp::get_logger("RRBotSystemPositionOnlyHardware"), "Joints successfully read!");
   // END: This part here is for exemplary purposes - Please do not copy to your production code
 
   return hardware_interface::return_type::OK;
@@ -212,17 +212,16 @@ hardware_interface::return_type RRBotSystemPositionOnlyHardware::write(
   const rclcpp::Time & /*time*/, const rclcpp::Duration & /*period*/)
 {
   // BEGIN: This part here is for exemplary purposes - Please do not copy to your production code
-  RCLCPP_INFO(rclcpp::get_logger("RRBotSystemPositionOnlyHardware"), "Writing...");
+  // RCLCPP_INFO(rclcpp::get_logger("RRBotSystemPositionOnlyHardware"), "Writing...");
 
   for (uint i = 0; i < hw_commands_.size(); i++)
   {
-    hw_commands_[i] = i;
+    // hw_commands_[i] = i;
     // Simulate sending commands to the hardware
-    RCLCPP_INFO(rclcpp::get_logger("RRBotSystemPositionOnlyHardware"), "Got command %.5f for joint %d!",
-                hw_commands_[i], i);
+  //   RCLCPP_INFO(rclcpp::get_logger("RRBotSystemPositionOnlyHardware"), "Got command %.5f for joint %d!",
+  //               hw_commands_[i], i);
   }
-  RCLCPP_INFO(
-    rclcpp::get_logger("RRBotSystemPositionOnlyHardware"), "Joints successfully written!");
+  // RCLCPP_INFO(rclcpp::get_logger("RRBotSystemPositionOnlyHardware"), "Joints successfully written!");
   // END: This part here is for exemplary purposes - Please do not copy to your production code
 
   return hardware_interface::return_type::OK;
