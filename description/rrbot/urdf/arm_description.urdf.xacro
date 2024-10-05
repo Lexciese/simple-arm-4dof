@@ -40,7 +40,7 @@
       <visual>
       <origin rpy="-0.00000 -0.00000 -0.00000" xyz="-0.00000 0.00000 -0.00000"/>
       <geometry>
-         <mesh filename="file://$(find ros2_control_demo_example_9)/meshes/stl/Cube.019.stl" scale="1.00000 1.00000 1.00000" />
+         <mesh filename="file://$(find simple_arm)/meshes/stl/Cube.019.stl" scale="1.00000 1.00000 1.00000" />
       </geometry>
     </visual>
     </link>
@@ -54,7 +54,7 @@
       <visual>
         <origin rpy="-0.00002 -0.00000 0.00000" xyz="-0.00000 0.00000 -0.00000" />
         <geometry>
-          <mesh filename="file://$(find ros2_control_demo_example_9)/meshes/stl/Cube.010.stl" scale="1.00000 1.00000 1.00000" />
+          <mesh filename="file://$(find simple_arm)/meshes/stl/Cube.010.stl" scale="1.00000 1.00000 1.00000" />
         </geometry>
       </visual>
     </link>
@@ -67,7 +67,7 @@
       <visual>
         <origin rpy="-0.00002 -0.00000 0.00000" xyz="-0.00000 -0.00000 -0.00000" />
         <geometry>
-          <mesh filename="file://$(find ros2_control_demo_example_9)/meshes/stl/Cube.013.stl" scale="1.00000 1.00000 1.00000" />
+          <mesh filename="file://$(find simple_arm)/meshes/stl/Cube.013.stl" scale="1.00000 1.00000 1.00000" />
         </geometry>
       </visual>
     </link>
@@ -80,7 +80,7 @@
       <visual>
         <origin rpy="-0.00002 -0.00000 0.00000" xyz="-0.00000 0.00000 0.00000" />
         <geometry>
-          <mesh filename="file://$(find ros2_control_demo_example_9)/meshes/stl/Cube.014.stl" scale="1.00000 1.00000 1.00000" />
+          <mesh filename="file://$(find simple_arm)/meshes/stl/Cube.014.stl" scale="1.00000 1.00000 1.00000" />
         </geometry>
       </visual>
     </link>
@@ -93,7 +93,7 @@
       <visual>
         <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.00000 0.00000 0.00000" />
         <geometry>
-          <mesh filename="file://$(find ros2_control_demo_example_9)/meshes/stl/Cube.018.stl" scale="1.00000 1.00000 1.00000" />
+          <mesh filename="file://$(find simple_arm)/meshes/stl/Cube.018.stl" scale="1.00000 1.00000 1.00000" />
         </geometry>
       </visual>
     </link>

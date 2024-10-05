@@ -59,7 +59,7 @@ def generate_launch_description():
         ],
     )
     robot_description_path = os.path.join(
-        get_package_share_directory('ros2_control_demo_example_9'),
+        get_package_share_directory('simple_arm'),
         'urdf',
         'arm.urdf.xacro'
     )
@@ -74,7 +74,7 @@ def generate_launch_description():
     #     ], 
     #     output='screen'
     # )
-    # print(robot_description_path) # /home/lexciese/Dev/kuliah/robotika/install/ros2_control_demo_example_9/share/ros2_control_demo_example_9/urdf/arm.urdf.xacro
+    # print(robot_description_path) # /home/lexciese/Dev/kuliah/robotika/install/simple_arm/share/simple_arm/urdf/arm.urdf.xacro
 # gz service -s /world/empty/create --reqtype gz.msgs.EntityFactory --reptype gz.msgs.Boolean --timeout 1000 --req 'sdf_filename: "/path/to/model.urdf", name: "urdf_model"'
     # Get URDF via xacro
     robot_description_content = Command(
@@ -82,7 +82,7 @@ def generate_launch_description():
             PathJoinSubstitution([FindExecutable(name="xacro")]),
             " ",
             PathJoinSubstitution(
-                [FindPackageShare("ros2_control_demo_example_9"), "urdf", "arm.urdf.xacro"]
+                [FindPackageShare("simple_arm"), "urdf", "arm.urdf.xacro"]
             ),
             " ",
             "use_gazebo:=true",
@@ -92,14 +92,14 @@ def generate_launch_description():
 
     robot_controllers = PathJoinSubstitution(
         [
-            FindPackageShare("ros2_control_demo_example_9"),
+            FindPackageShare("simple_arm"),
             "config",
             "rrbot_controllers.yaml",
         ]
     )
 
     rviz_config_file = PathJoinSubstitution(
-        [FindPackageShare("ros2_control_demo_example_9"), "rrbot/rviz", "rrbot.rviz"]
+        [FindPackageShare("simple_arm"), "rrbot/rviz", "rrbot.rviz"]
     )
     
 

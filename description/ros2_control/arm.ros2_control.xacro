@@ -9,8 +9,8 @@
           <plugin>gz_ros2_control/GazeboSimSystem</plugin>
         </xacro:if>
         <xacro:unless value="${use_gazebo}">
-          <plugin>ros2_control_demo_example_9/RRBotSystemPositionOnlyHardware</plugin>
-          <param name="example_param_hw_start_duration_sec">5</param>
+          <plugin>simple_arm/RRBotSystemPositionOnlyHardware</plugin>
+          <param name="example_param_hw_start_duration_sec">3</param>
           <param name="example_param_hw_stop_duration_sec">3.0</param>
           <param name="example_param_hw_slowdown">100</param>
         </xacro:unless>

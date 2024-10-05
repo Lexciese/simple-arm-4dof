@@ -22,7 +22,7 @@ def generate_launch_description():
 
     position_goals = PathJoinSubstitution(
         [
-            FindPackageShare("ros2_control_demo_example_9"),
+            FindPackageShare("simple_arm"),
             "config",
             "rrbot_forward_position_publisher.yaml",
         ]

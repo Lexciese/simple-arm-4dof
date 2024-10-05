@@ -12,8 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#ifndef ROS2_CONTROL_DEMO_EXAMPLE_9__RRBOT_HPP_
-#define ROS2_CONTROL_DEMO_EXAMPLE_9__RRBOT_HPP_
+#ifndef SIMPLE_ARM_RRBOT_HPP_
+#define SIMPLE_ARM_RRBOT_HPP_
 
 #include <memory>
 #include <string>
@@ -30,7 +30,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/joint_state.hpp"
 
-namespace ros2_control_demo_example_9 {
+namespace simple_arm {
 class RRBotSystemPositionOnlyHardware : public hardware_interface::SystemInterface {
 public:
   RCLCPP_SHARED_PTR_DEFINITIONS(RRBotSystemPositionOnlyHardware);

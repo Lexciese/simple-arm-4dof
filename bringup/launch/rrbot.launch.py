@@ -45,7 +45,7 @@ def generate_launch_description():
             " ",
         PathJoinSubstitution(
                 [
-                    FindPackageShare("ros2_control_demo_example_9"),
+                    FindPackageShare("simple_arm"),
                     "urdf",
                     "arm.urdf.xacro",
                 ]
@@ -56,13 +56,13 @@ def generate_launch_description():
 
     robot_controllers = PathJoinSubstitution(
         [
-            FindPackageShare("ros2_control_demo_example_9"),
+            FindPackageShare("simple_arm"),
             "config",
             "rrbot_controllers.yaml",
         ]
     )
     rviz_config_file = PathJoinSubstitution(
-        [FindPackageShare("ros2_control_demo_example_9"), "rrbot/rviz", "rrbot.rviz"]
+        [FindPackageShare("simple_arm"), "rrbot/rviz", "rrbot.rviz"]
     )
 
     control_node = Node(

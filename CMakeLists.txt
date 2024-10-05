@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(ros2_control_demo_example_9 LANGUAGES CXX)
+project(simple_arm LANGUAGES CXX)
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "(GNU|Clang)")
   add_compile_options(-Wall -Wextra)
@@ -33,38 +33,38 @@ endforeach()
 
 ## COMPILE
 add_library(
-  ros2_control_demo_example_9
+  simple_arm
   SHARED
   hardware/rrbot.cpp
 )
-target_compile_features(ros2_control_demo_example_9 PUBLIC cxx_std_17)
-target_include_directories(ros2_control_demo_example_9 PUBLIC
+target_compile_features(simple_arm PUBLIC cxx_std_17)
+target_include_directories(simple_arm PUBLIC
 $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/hardware/include>
-$<INSTALL_INTERFACE:include/ros2_control_demo_example_9>
+$<INSTALL_INTERFACE:include/simple_arm>
 )
 ament_target_dependencies(
-  ros2_control_demo_example_9 PUBLIC
+  simple_arm PUBLIC
   ${THIS_PACKAGE_INCLUDE_DEPENDS}
 )
 
 # Export hardware plugins
-pluginlib_export_plugin_description_file(hardware_interface ros2_control_demo_example_9.xml)
+pluginlib_export_plugin_description_file(hardware_interface simple_arm_hardware_interface_plugin.xml)
 
 # INSTALL
 install(
   DIRECTORY hardware/include/
-  DESTINATION include/ros2_control_demo_example_9
+  DESTINATION include/simple_arm
 )
 install(
   DIRECTORY description/launch description/ros2_control description/urdf description/gazebo description/meshes description/rrbot
-  DESTINATION share/ros2_control_demo_example_9
+  DESTINATION share/simple_arm
 )
 install(
   DIRECTORY bringup/launch bringup/config
-  DESTINATION share/ros2_control_demo_example_9
+  DESTINATION share/simple_arm
 )
-install(TARGETS ros2_control_demo_example_9
-  EXPORT export_ros2_control_demo_example_9
+install(TARGETS simple_arm
+  EXPORT export_simple_arm
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION bin
@@ -79,6 +79,6 @@ if(BUILD_TESTING)
 endif()
 
 ## EXPORTS
-ament_export_targets(export_ros2_control_demo_example_9 HAS_LIBRARY_TARGET)
+ament_export_targets(export_simple_arm HAS_LIBRARY_TARGET)
 ament_export_dependencies(${THIS_PACKAGE_INCLUDE_DEPENDS})
 ament_package()

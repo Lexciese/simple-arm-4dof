@@ -1,0 +1,9 @@
+<library path="simple_arm">
+  <class name="simple_arm/RRBotSystemPositionOnlyHardware"
+         type="simple_arm::RRBotSystemPositionOnlyHardware"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      The ros2_control simple arm example using a system hardware interface-type.
+    </description>
+  </class>
+</library>
